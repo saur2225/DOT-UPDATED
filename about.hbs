@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+ <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+ <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" rel="stylesheet">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+</head>
+<style> 
+body{
+    overflow-y : auto;
+}
+    #particles-js{
+        background-color:black;
+        background-size:cover;
+        height:680px;
+        overflow: hidden;
+  margin: 0;
+    }
+    @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+.max {
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+          animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+    position:absolute;
+    margin-left:20%;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", c
+}
+@-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+} 
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+@media screen and (min-width: 601px) {
+    .max{
+          margin-top:20%;
+          font-size:84px;
+          -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+          animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  }
+  @-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+} 
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .max{
+      margin-top:70%;
+      font-size:22px;
+  }
+}
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+
+#demo {
+  height:100%;
+  position:relative;
+  overflow:hidden;
+}
+
+
+.green{
+  background-color:#6fb936;
+}
+        .thumb{
+            margin-bottom: 30px;
+        }
+        
+        .page-top{
+            margin-top:85px;
+        }
+
+   
+img.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+        
+ 
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+    .modal-header {
+   
+     border-bottom: none;
+}
+    .modal-title {
+        color:#000;
+    }
+    .modal-footer{
+      display:none;  
+    }
+@media screen and (min-width: 601px) {
+    .hea{
+      font-size:44px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .k2{
+  
+  }
+}
+
+@media screen and (min-width: 601px) {
+    .k2{
+      margin-left:auto;
+      margin-right:auto;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .hea{
+   font-size:24px;
+  }
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+@media screen and (min-width: 601px) {
+    .rounded-circle{
+      width:200px;
+      height:200px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .rounded-circle{
+   width:100px;
+   height:100px
+  }
+}
+
+
+</style>
+  
+<body>
+    {{>header}}
+    <div id="particles-js">
+            <div class="max" style="font-family:sans-serif">
+        <center>Developers Of Technology</center>
+    </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    </div>
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <section class="team-section text-center my-5">
+
+  <!-- Section heading -->
+  <p class="grey-text w-responsive mx-auto mb-5">Developers Of Technology is a technical community which works to enhance the technical skills by organising workshops and events. We also provide E-learning services and stunning web services. Developers Of Technology is a hub of technical mindset, just discuss your problem, and here is your solution.</p>
+  <h2 class="h1-responsive font-weight-bold my-5">Our amazing team</h2>
+  <!-- Section description -->
+  <p class="grey-text w-responsive mx-auto mb-5">If You Want To Fly Like An Eagle, Then Stop Swimming With Ducks</p>
+  
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5 wow fadeInUp" data-wow-delay="0s">
+      <div class="avatar mx-auto">
+        <img src="img/saurabh.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Saurabh Srivastava</h5>
+      <p class="text-uppercase blue-text"><strong>Chief Executive Officer</strong></p>
+      <p class="grey-text">You need to be confident enough to put your thoughts in front of others, Dont think for results</p>
+      <ul class="list-unstyled mb-0">
+        <!-- Github -->
+        <a class="p-2 fa-lg fb-ic" href="https://github.com/saur2225">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/saurabh-srivastava-706104187/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/saur2225/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5 wow fadeInUp" data-wow-delay="0.5s">
+      <div class="avatar mx-auto">
+        <img src="img/kesh.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Keshav Krishna</h5>
+      <p class="text-uppercase blue-text"><strong>Co-Chief Executive Officer</strong></p>
+      <p class="grey-text">There is nothing non-achievable.. onlu one have to take step towards it.</p>
+      <ul class="list-unstyled mb-0">
+        <!-- Github -->
+        <a class="p-2 fa-lg fb-ic" href="https://github.com/keshavkrishna2211">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/keshav-krishna-a2561417b/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/sharthakkeshav/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5 wow fadeInUp" data-wow-delay="1s" >
+      <div class="avatar mx-auto">
+        <img src="img/harjot.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Harjot Singh</h5>
+      <p class="text-uppercase blue-text"><strong>Chief Technical Officer</strong></p>
+      <p class="grey-text">Success is not final, Failure is not fatal, it is the courage that continues</p>
+      <ul class="list-unstyled mb-0">
+        <!-- Github -->
+        <a class="p-2 fa-lg fb-ic" href="https://github.com/harjotscs">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/harjotscs/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/expertharjot/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5 wow fadeInUp" data-wow-delay="1.5s">
+      <div class="avatar mx-auto">
+        <img src="img/sudhanshu.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Sudhanshu Sharan</h5>
+      <p class="text-uppercase blue-text"><strong>Administrative Officer</strong></p>
+      <p class="grey-text">Dont wait for your turn, Keep your work updated to bang at right time</p>
+      <ul class="list-unstyled mb-0">
+        <!-- Github -->
+        <a class="p-2 fa-lg fb-ic" >
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/sudhanshu-sharan-0866a4196/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/sudhanshu_sharan/?hl=en">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+    </section>
+    <!-- Section: Team v.1 -->
+    <button type="button" class="collapsible" style="text-align:center">View Full Team</button>
+<div class="content">
+  <section class="team-section text-center my-5">
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/yuv.jpg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Yuvraj Singh</h5>
+      <p class="text-uppercase blue-text"><strong>HR Executive</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Facebook -->
+        <a class="p-2 fa-lg fb-ic">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+    <!-- Grid column -->
+<div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/k2.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Kratika Gupta</h5>
+      <p class="text-uppercase blue-text"><strong>Management Head</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Github -->
+        <a class="p-2 fa-lg fb-ic" href="https://github.com/Vijaya9418">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/vijaya-shree-kanwal-26a764197/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/vijaya0418/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+    <!-- Grid column -->
+    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/viji.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Vijaya Shree Kanwal</h5>
+      <p class="text-uppercase blue-text"><strong>Marketting Head</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Github -->
+        <a class="p-2 fa-lg fb-ic" href="https://github.com/Vijaya9418">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/vijaya-shree-kanwal-26a764197/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/vijaya0418/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/vaidik.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Vaidik Kamde</h5>
+      <p class="text-uppercase blue-text"><strong>Digital Marketing Head</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Github -->
+        <a class="p-2 fa-lg fb-ic" href="https://github.com/vaidikkamde">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/vaidik-kamde-b76740169/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/vaidik_kamde/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-3 col-md-6">
+      <div class="avatar mx-auto">
+        <img src="img/pratap.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Pratap Darjee</h5>
+      <p class="text-uppercase blue-text"><strong>Research and Development</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Facebook -->
+        <a class="p-2 fa-lg fb-ic">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+    <!-- Grid column -->
+    <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/himanshu1.jpg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Himanshu Sagar</h5>
+      <p class="text-uppercase blue-text"><strong>Public Relations</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Facebook -->
+        <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/sagarsingh.singh.71697">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/himanshu-sagar-542029184/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/sagarhimanshu071/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+        <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/sandeep.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Sandeep Kumar</h5>
+      <p class="text-uppercase blue-text"><strong>Chief Instructor(Youtube)</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Facebook -->
+        <a class="p-2 fa-lg fb-ic">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/sandeep-kumar-23b275185/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/sandeep_sammy_official/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+        <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/sudarshan.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Sudarshan</h5>
+      <p class="text-uppercase blue-text"><strong>Technical Member</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Facebook -->
+        <a class="p-2 fa-lg fb-ic" href="https://github.com/DevVarma19">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/dev-varma-mvss/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/varma__m_19/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+        <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/ashraf.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Ashraf Ali</h5>
+      <p class="text-uppercase blue-text"><strong>Technical Member</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Facebook -->
+        <a class="p-2 fa-lg fb-ic">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+            <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/rohit.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Rohit Kumar</h5>
+      <p class="text-uppercase blue-text"><strong>Social Media Handler</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Facebook -->
+        <a class="p-2 fa-lg fb-ic" href="https://github.com/Rohitszx">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/rohitszx/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/rohitszx/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/prakash.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Prakash Reddy</h5>
+      <p class="text-uppercase blue-text"><strong>graphic Designer</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Facebook -->
+        <a class="p-2 fa-lg fb-ic">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+            <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/charu.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Charu Kumari</h5>
+      <p class="text-uppercase blue-text"><strong>Social Networking Handler</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Facebook -->
+        <a class="p-2 fa-lg fb-ic" href="https://github.com/charusingh1609">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/charu-singh-454a71192/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/i_m_charu_singh/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+            <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="img/abhinav.jpeg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Abhinav Singh</h5>
+      <p class="text-uppercase blue-text"><strong>Content Writer</strong></p>
+      <ul class="list-unstyled mb-0">
+        <!-- Facebook -->
+        <a class="p-2 fa-lg fb-ic" href="https://github.com/abhinavsingh0212">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <!-- Linkedin-->
+        <a class="p-2 fa-lg tw-ic" href="https://www.linkedin.com/in/abhinav-singh-230531186/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/abhinavsingh1463/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </ul>
+    </div>
+  </div>
+  <!-- Grid row -->
+</section>
+</div>
+
+<!-- Section: Team v.1 -->
+<div class="dec2" style="background: #DC2424;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+; margin-top:-50px">
+    <h1 class="hea wow fadeInUp" style="text-align:center; font-family:sans-serif; font-weight:800; color:white">PHOTO GALLERY</h1>
+    <div class="container page-top" >
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInLeft">
+                <a href="img/g1.jpg" rel="ligthbox">
+                    <img  src="img/g1.jpg" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInUp">
+                <a href="img/g2.jpg"  class="fancybox" rel="ligthbox">
+                    <img  src="img/g2.jpg" class="zoom img-fluid"  alt="">
+                </a>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInUp">
+                <a href="img/g3.jpg" class="fancybox" rel="ligthbox">
+                    <img  src="img/g3.jpg" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInRight">
+                <a href="img/g4.jpg">
+                    <img  src="img/g4.jpg" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInLeft">
+                <a href="img/g5.jpg" class="fancybox" rel="ligthbox">
+                    <img  src="img/g5.jpg" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInUp">
+                <a href="img/g6.jpg" class="fancybox" rel="ligthbox">
+                    <img  src="img/g6.jpg" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInUp">
+                <a href="img/f1.jpeg" class="fancybox" rel="ligthbox">
+                    <img  src="img/f1.jpeg" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInRight">
+                <a href="img/g8.jpg" class="fancybox" rel="ligthbox">
+                    <img  src="img/g8.jpg" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInLeft">
+                <a href="img/g9.jpg" class="fancybox" rel="ligthbox">
+                    <img  src="img/g9.jpg" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInUp">
+                <a href="img/g10.jpg" class="fancybox" rel="ligthbox">
+                    <img  src="img/g10.jpg" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInUp">
+                <a href="img/g7.jpg">
+                    <img  src="img/g7.jpg" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb wow fadeInRight">
+                <a href="img/f3.jpeg">
+                    <img  src="img/f3.jpeg" class="zoom img-fluid " alt="">
+                </a>
+            </div>
+       </div>
+    </div> 
+    </div>
+  </div>
+</div>
+</div>
+           {{>footer}}
+           <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+          <script>
+           $(document).ready(function(){
+  $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+    
+    $(".zoom").hover(function(){
+		
+		$(this).addClass('transition');
+	}, function(){
+        
+		$(this).removeClass('transition');
+	});
+});
+        </script> 
+        <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+  $('.testi1').owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: false,
+  dots: true,
+  autoplay: true,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false
+    },
+    1024: {
+      items: 2
+    }
+  }
+});
+</script>
+</body>
+</html>

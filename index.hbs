@@ -1,0 +1,2359 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Developers Of Technology</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <script async>(function(w, d) { w.CollectId = "5e91b4ab7a3ed14fbd198ce6"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+ <style>
+  *{
+    margin:0;
+    padding:0;
+  }
+  body {
+      position: relative; 
+  }
+  @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+{{!-- body{
+    font-family: 'Exo', sans-serif;
+} --}}
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: black;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 1450px;
+    height:100vh;
+    margin-top:-50px;
+}
+
+.circles{
+    position: absolute;
+    top:40px;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background:white;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+#banner{
+    background-image:linear-gradient(to right, #a517ba, #5f1782);  
+    /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);   */
+    color:#fff;
+    padding-top:5%;
+}
+.promo-title{
+  font-weight:600;
+  margin-top:100px;
+  font-size:46px;
+}
+
+#section2{
+    background: white;  
+    /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);   */
+}
+.text-with-animation {
+  font-size: 3vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100vh;
+  vertical-align: middle;
+  animation: main-text-animation 1.7s ease-in-out forwards;
+  font-weight: 700;
+  color: white;
+  overflow: hidden;
+  display: block;
+  width: 500vw;
+  margin-left: -202vw;
+  margin-top:-100px;
+}
+
+.cont {
+  height: 100vh;
+  line-height: 100vh;
+  vertical-align: middle;
+}
+
+.subtext-with-animation {
+  
+  position: absolute;
+  font-size: 2vw;
+  text-align: center;
+  line-height: 100vh;
+  vertical-align: middle;
+  top:  0px;
+  width: 100%;
+  font-family: 'Gochi Hand', cursive;
+  color: lightgrey;
+  letter-spacing: 4px;
+  user-select: none;
+  overflow: hidden;
+  display: block;
+  margin-left:-2px;
+}
+
+.subtext-with-animation span:first-of-type {
+  position: relative;
+  opacity: 0;
+  animation: word-animation 0.5s ease-out 1.5s forwards;
+}
+
+.subtext-with-animation span:nth-of-type(2) {
+  position: relative;
+  opacity: 0;
+  animation: word-animation 0.5s ease-out 1.7s forwards;
+}
+
+.cont{
+  overflow: hidden;
+  margin: 0;
+  /* background-color:#010101; */
+}
+
+/* .cont, html {
+  width: 100vw;
+  max-width: 100vw;
+} */
+@keyframes main-text-animation {
+  0% {
+    letter-spacing: 25vw;
+    word-spacing: 100vw;
+    opacity: 0;
+  }
+  100% {
+    letter-spacing: 4px;
+    word-spacing: 1vw;
+    opacity: 1;
+  }
+}
+
+@keyframes word-animation {
+  0% {
+    top: 10vw;
+    opacity: 0;
+  }
+  100% {
+    top: 5vw;
+    opacity: 1;
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+/* BODY */
+/* body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+  background-image: -webkit-linear-gradient(90deg, skyblue 0%, steelblue 100%);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  overflow: hidden;
+  font-family: "Luckiest Guy", cursive;
+  -webkit-font-smoothing: antialiased;
+} */
+::selection {
+  background: transparent;
+}
+
+.h {
+  cursor: default;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.h span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  -webkit-animation: bounce 2s ease infinite alternate;
+  font-size: 30px;
+  color: #fff;
+}
+
+.h span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+.h span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+.h span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+.h span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+.h span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+.h span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+.h span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+.h span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+}
+
+.h span:nth-child(10) {
+  -webkit-animation-delay: 0.4s;
+}
+
+.h span:nth-child(11) {
+  -webkit-animation-delay: 0.5s;
+}
+
+.h span:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+}
+
+.h span:nth-child(13) {
+  -webkit-animation-delay: 0.7s;
+}
+
+.h span:nth-child(14) {
+  -webkit-animation-delay: 0.8s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+#section3{
+  /* background-color:white; */
+  height:50vw;
+  margin-left:-5px;
+  width:100%;
+}
+/* body {
+    font-family: sans-serif;
+    background-color: #81d4fa;
+    font-weight: bold;
+} */
+
+.text-box {
+    margin-left: 44vw;
+     margin-top: 42vh;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color:white;
+    color:black;
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.btn{
+  background-color:rgb(51, 14, 110);
+  color:white;
+}
+#section3{
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("img/1.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+/* html{
+  background-color: #6fd3c7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%2365cbbd' fill-opacity='0.77'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+   cursor: pointer;
+} */
+
+h4{
+  text-align: center; 
+  font-family: monospace;
+  cursor: pointer;
+  color:#fff;
+  position:fixed;
+  bottom:5px;
+  right:5px;
+}
+
+.wrapper{
+
+  width: 35%;
+  margin-left:33%;
+
+}
+#Do{    
+  stroke:yellow;
+  fill:yellow;
+  stroke-dasharray: 600;
+  opacity: 1;
+  animation: yellow 3s cubic-bezier(0,0.23,1,.1);
+  animation-delay: 0s;
+  -moz-animation:yellow 3s cubic-bezier(0,0.23,1,.1); 
+  -webkit-animation:yellow 3s cubic-bezier(0,0.23,1,.1) ; 
+}
+
+#Something, .Something{
+  fill:#fff;
+  stroke-dasharray: 400;
+  stroke:#fff;
+  opacity: 0;
+  animation: white 4s cubic-bezier(0,0.23,1,.1);
+  -moz-animation: white 4s cubic-bezier(0,0.23,1,.1); 
+  -webkit-animation: white 4s cubic-bezier(0,0.23,1,.1);
+  animation-delay: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#Creative, .Creative{
+  fill:#FEF202;
+  stroke-dasharray: 600;
+  stroke:#FEF202;
+  opacity: 0;
+  animation: yellow 5s cubic-bezier(0,0.23,1,.1);
+  -moz-animation:yellow 5s cubic-bezier(0,0.23,1,.1); 
+  -webkit-animation:yellow 5s cubic-bezier(0,0.23,1,.1);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+#EveryDay,.EveryLetters{
+  fill:#6FD3C7;
+  stroke-dasharray: 600;
+  stroke:#6FD3C7;
+  opacity: 0;
+  animation: green 4s cubic-bezier(0,0.23,1,.1);
+  -moz-animation:green 4s cubic-bezier(0,0.23,1,.1); 
+  -webkit-animation:green 4s cubic-bezier(0,0.23,1,.1);
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+}
+.EveryDayandBackground{
+  fill:#fff;
+  opacity: 0;
+  animation: everydayBK 4s cubic-bezier(0,0.23,1,.1);
+  -moz-animation:everydayBK 4s cubic-bezier(0,0.23,1,.1); 
+  -webkit-animation:everydayBK 4s cubic-bezier(0,0.23,1,.1);
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  stroke-dasharray: 850;
+  stroke:#fff;
+}
+#LeftDotsAndLines,#RightDotsAndLines{
+  fill:#fff;
+  stroke-dasharray: 60;
+  stroke:#fff;
+  opacity: 0;
+  animation: lines 5s cubic-bezier(0,0.23,1,.1);
+  -moz-animation:lines 5s cubic-bezier(0,0.23,1,.1); 
+  -webkit-animation:lines 5s cubic-bezier(0,0.23,1,.1);
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#Border{
+  fill:#FEF202;
+  stroke-dasharray: 1400;
+  opacity: 0;
+  stroke:#FEF202;
+  animation: Border 3s cubic-bezier(0,0.23,1,.1);
+  -moz-animation:Border 3s cubic-bezier(0,0.23,1,.1); 
+  -webkit-animation:Border 3s cubic-bezier(0,0.23,1,.1);
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#QuotationLeft, #QuotationRight {
+  fill:#9BF5E9;
+  stroke-dasharray: 40;
+  opacity: 0;
+  stroke:#9BF5E9;
+  animation: Quotation 3s cubic-bezier(0,0.23,1,.1);
+  -moz-animation: Quotation 3s cubic-bezier(0,0.23,1,.1); 
+  -webkit-animation: Quotation 3s cubic-bezier(0,0.23,1,.1) ;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+
+ /* ainmations  */ 
+@keyframes Quotation{
+  0%{opacity: 0;
+    fill:none;
+    stroke-dashoffset: 40;}
+  50%{opacity: 10;
+    fill:none;
+    stroke-dashoffset: 40;}
+  50%{
+    fill:rgba(255,255,255,0);}
+  100%{opacity: 10;
+    fill:#9BF5E9;
+    stroke-dashoffset: 0;}
+}
+
+
+@keyframes yellow{
+  0%{opacity: 0;
+    fill:none;
+    stroke-dashoffset: 600;}
+  50%{opacity: 10;
+    fill:none;
+    stroke-dashoffset: 600;}
+  50%{
+    fill:rgba(255,255,255,0);}
+  100%{opacity: 10;
+    fill:#FEF202;
+    stroke-dashoffset: 0;}
+}
+
+@keyframes Border{
+  0%{opacity: 0;
+    fill:none;
+    stroke-dashoffset: 1400;}
+  50%{opacity: 10;
+    fill:none;
+    stroke-dashoffset: 1400;}
+  50%{
+    fill:rgba(255,255,255,0);}
+  100%{opacity: 10;
+    fill:#FEF202;
+    stroke-dashoffset: 0;}
+}
+
+@keyframes green{
+  0%{opacity: 0;
+    fill:none;
+    stroke-dashoffset: 600;}
+  50%{opacity: 10;
+    fill:none;
+    stroke-dashoffset: 600;}
+  50%{
+    fill:rgba(255,255,255,0);}
+  100%{opacity: 10;
+    fill:#6FD3C7;
+    stroke-dashoffset: 0;}
+}
+
+@keyframes everydayBK{
+  0%{opacity: 0;
+    fill:none;
+    stroke-dashoffset: 850;}
+  50%{opacity: 10;
+    fill:none;
+    stroke-dashoffset: 850;}
+  50%{
+    fill:rgba(255,255,255,0);}
+  100%{opacity: 10;
+    fill:#fff;
+    stroke-dashoffset: 0;}
+}
+
+@keyframes white{
+  0%{opacity: 0;
+    fill:none;
+    stroke-dashoffset: 400;}
+  50%{opacity: 10;
+    fill:none;
+    stroke-dashoffset: 400;}
+  50%{
+    fill:rgba(255,255,255,0);}
+  100%{opacity: 10;
+    fill:#fff;
+    stroke-dashoffset: 0;}
+}
+
+@keyframes lines{
+  0%{opacity: 0;
+    fill:none;
+    stroke-dashoffset: 60;}
+  50%{opacity: 10;
+    fill:none;
+    stroke-dashoffset: 60;}
+  50%{
+    fill:rgba(255,255,255,0);}
+  100%{opacity: 10;
+    fill:#fff;
+    stroke-dashoffset: 0;}
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 100%;
+} */
+
+/* body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+} */
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#section41{
+  background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("img/c1.jpg");
+  font-size: 12px;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+#section4, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  /* min-height: 100vh; */
+}
+
+.con{
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background-color:white;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: #ed1c6f;
+}
+
+.screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+.screen-header-right {
+  display: flex;
+}
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: black;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: black;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: green;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #b9134f;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+.row.heading h2 {
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.heading.heading-icon {
+    display: block;
+}
+.padding-lg {
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.practice-area.padding-lg {
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+.practice-area .inner{ 
+     border:1px solid #999999; 
+	 text-align:center; 
+	 margin-bottom:28px; 
+	 padding:40px 25px;
+}
+.our-webcoderskull .cnt-block:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border: 0;
+}
+.practice-area .inner h3{ 
+    color:#3c3c3c; 
+	font-size:24px; 
+	font-weight:500;
+	font-family: 'Poppins', sans-serif;
+	padding: 10px 0;
+}
+.practice-area .inner p{ 
+    font-size:14px; 
+	line-height:22px; 
+	font-weight:400;
+}
+.practice-area .inner img{
+	display:inline-block;
+}
+.our-webcoderskull .cnt-block{ 
+   float:left; 
+   width:100%; 
+   background:#fff; 
+   padding:30px 20px; 
+   text-align:center; 
+   border:2px solid #d5d5d5;
+   margin: 0 0 28px;
+}
+.our-webcoderskull .cnt-block figure{
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+   display:inline-block;
+   margin-bottom: 15px;
+}
+.our-webcoderskull .cnt-block img{ 
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+}
+.our-webcoderskull .cnt-block h3{ 
+   color:#2a2a2a; 
+   font-size:20px; 
+   font-weight:500; 
+   padding:6px 0;
+   text-transform:uppercase;
+}
+.our-webcoderskull .cnt-block h3 a{
+  text-decoration:none;
+	color:#2a2a2a;
+}
+.our-webcoderskull .cnt-block h3 a:hover{
+	color:#337ab7;
+}
+.our-webcoderskull .cnt-block p{ 
+   color:#2a2a2a; 
+   font-size:13px; 
+   line-height:20px; 
+   font-weight:400;
+}
+.our-webcoderskull .cnt-block .follow-us{
+	margin:20px 0 0;
+}
+.our-webcoderskull .cnt-block .follow-us li{ 
+    display:inline-block; 
+	width:auto; 
+	margin:0 5px;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa{ 
+   font-size:24px; 
+   color:#767676;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
+   color:#025a8e;
+}
+
+a:link {
+  text-decoration: none;
+}
+#navbar{
+  position:fixed;
+  top:0;
+  z-index:10;
+}
+.navbar{
+  z-index:10;
+  position:fixed;
+  width:100%;
+  background-image:linear-gradient(to right,#a517ba, #5f1782);
+  padding:0 !important;
+}
+.navbar-brand img{
+  padding-left:20px;
+}
+.navbar-nav li{
+  padding:0 10px;
+
+}
+.navbar-nav li a{
+    color:#fff !important;
+    font-weight:600;
+    float:right;
+    text-align:left;
+}
+.navbar-nav li a:hover{
+  border-bottom:2px solid white;
+}
+.fa-bars{
+  color:#fff;
+  font-size:30px !important;
+}
+.navbar-toggler{
+  outline:none !important;
+
+}
+.bottom-img{
+  width:100%;
+  height:10vw;
+}
+.promo-tag{
+  font-size:24px;
+
+}
+.button101 {
+  width: 200px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button101:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.gradient-button {
+    font-family: "Arial", Gadget, sans-serif;
+    font-size: 2vw;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 30vh;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.gradient-button-4 {background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)}
+.gradient-button-4:hover { background-position: right center; }
+.lst1{
+  text-align:center;
+}
+@media screen and (min-width: 601px) {
+  .lst11{
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .lst11 {
+    font-size: 10px; 
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding:16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height:300px;
+  margin-top:30%;
+  margin-bottom:30%;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+
+  }
+}
+
+        /* Prefix Support */ 
+          
+        .img-fluid { 
+            -webkit-animation-name: bounce; 
+            -webkit-animation-duration: 1.5s; 
+            -webkit-animation-direction: alternate; 
+            -webkit-animation-timing-function: cubic-bezier( 
+            .5, 0.05, 1, .5); 
+            -webkit-animation-iteration-count: infinite; 
+        } 
+          
+        @-webkit-keyframes bounce { 
+            from { 
+                -webkit-transform: translate3d(0, 0, 0); 
+                transform: translate3d(0, 0, 0); 
+            } 
+            to { 
+                -webkit-transform: translate3d(0, 300px, 0); 
+                transform: translate3d(0, 300px, 0); 
+            } 
+        } 
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+*{
+  box-sizing: border-box;
+}
+.card:hover{
+ background: #fc4a1a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color:white;
+}
+
+  
+  
+  
+  
+  .rocket {
+  position: absolute;
+
+  width: 80px;
+  left: calc(50% - 60px);
+}
+.rocket .rocket-body {
+  width: 80px;
+  left: calc(50% - 50px);
+  animation: bounce 0.5s infinite;
+}
+.rocket .rocket-body .body {
+  background-color: #dadada;
+  height: 180px;
+  left: calc(50% - 50px);
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top: 5px solid #f5f5f5;
+  margin-left:auto;
+  margin-right:auto;
+}
+.rocket .rocket-body:before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 13px;
+  background-color: #554842;
+  bottom: -13px;
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 60%;
+}
+.rocket .window {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #a75248;
+  left: calc(50% - 25px);
+  top: 40px;
+  border: 5px solid #b4b2b2;
+}
+.rocket .fin {
+  position: absolute;
+  z-index: -100;
+  height: 55px;
+  width: 50px;
+  background-color: #a75248;
+}
+.rocket .fin-left {
+  left: -30px;
+  top: calc(100% - 55px);
+  border-top-left-radius: 80%;
+  border-bottom-left-radius: 20%;
+}
+.rocket .fin-right {
+  right: -30px;
+  top: calc(100% - 55px);
+  border-top-right-radius: 80%;
+  border-bottom-right-radius: 20%;
+}
+.rocket .exhaust-flame {
+  position: absolute;
+  top: 90%;
+  width: 28px;
+  background: linear-gradient(to bottom, transparent 10%, #f5f5f5 100%);
+  height: 150px;
+  left: calc(50% - 14px);
+  animation: exhaust 0.2s infinite;
+}
+.rocket .exhaust-fumes li {
+  width: 60px;
+  height: 60px;
+  background-color: #f5f5f5;
+  list-style: none;
+  position: absolute;
+  border-radius: 100%;
+}
+.rocket .exhaust-fumes li:first-child {
+  width: 180px;
+  height: 180px;
+  bottom: -300px;
+  animation: fumes 5s infinite;
+}
+.rocket .exhaust-fumes li:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  left: -120px;
+  top: 260px;
+  animation: fumes 3.2s infinite;
+}
+.rocket .exhaust-fumes li:nth-child(3) {
+  width: 120px;
+  height: 120px;
+  left: -40px;
+  top: 330px;
+  animation: fumes 3s 1s infinite;
+}
+.rocket .exhaust-fumes li:nth-child(4) {
+  width: 100px;
+  height: 100px;
+  left: -170px;
+  animation: fumes 4s 2s infinite;
+  top: 380px;
+}
+.rocket .exhaust-fumes li:nth-child(5) {
+  width: 130px;
+  height: 130px;
+  left: -120px;
+  top: 350px;
+  animation: fumes 5s infinite;
+}
+.rocket .exhaust-fumes li:nth-child(6) {
+  width: 200px;
+  height: 200px;
+  left: -60px;
+  top: 280px;
+  animation: fumes2 10s infinite;
+}
+.rocket .exhaust-fumes li:nth-child(7) {
+  width: 100px;
+  height: 100px;
+  left: -100px;
+  top: 320px;
+}
+.rocket .exhaust-fumes li:nth-child(8) {
+  width: 110px;
+  height: 110px;
+  left: 70px;
+  top: 340px;
+}
+.rocket .exhaust-fumes li:nth-child(9) {
+  width: 30px;
+  height: 30px;
+  left: 180px;
+  top: 380px;
+  animation: fumes 20s infinite;
+}
+
+.star li {
+  list-style: none;
+  position: absolute;
+}
+.star li:before, .star li:after {
+  content: '';
+  position: absolute;
+  background-color: #f5f5f5;
+}
+.star li:before {
+  width: 10px;
+  height: 2px;
+  border-radius: 50%;
+}
+.star li:after {
+  height: 8px;
+  width: 2px;
+  left: 4px;
+  top: -3px;
+}
+.star li:first-child {
+  top: -30px;
+  left: -210px;
+  animation: twinkle 0.4s infinite;
+}
+.star li:nth-child(2) {
+  top: 0;
+  left: 60px;
+  animation: twinkle 0.5s infinite;
+}
+.star li:nth-child(2):before {
+  height: 1px;
+  width: 5px;
+}
+.star li:nth-child(2):after {
+  width: 1px;
+  height: 5px;
+  top: -2px;
+  left: 2px;
+}
+.star li:nth-child(3) {
+  left: 120px;
+  top: 220px;
+  animation: twinkle 1s infinite;
+}
+.star li:nth-child(4) {
+  left: -100px;
+  top: 200px;
+  animation: twinkle 0.5s ease infinite;
+}
+.star li:nth-child(5) {
+  left: 170px;
+  top: 100px;
+  animation: twinkle 0.4s ease infinite;
+}
+.star li:nth-child(6) {
+  top: 87px;
+  left: -79px;
+  animation: twinkle 0.2s infinite;
+}
+.star li:nth-child(6):before {
+  height: 1px;
+  width: 5px;
+}
+.star li:nth-child(6):after {
+  width: 1px;
+  height: 5px;
+  top: -2px;
+  left: 2px;
+}
+
+@keyframes fumes {
+  50% {
+    transform: scale(1.5);
+    background-color: transparent;
+  }
+  51% {
+    transform: scale(0.8);
+  }
+  100% {
+    background-color: #f5f5f5;
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translate3d(0px, 0px, 0);
+  }
+  50% {
+    transform: translate3d(0px, -4px, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+  }
+}
+@keyframes exhaust {
+  0% {
+    background: linear-gradient(to bottom, transparent 10%, #f5f5f5 100%);
+  }
+  50% {
+    background: linear-gradient(to bottom, transparent 8%, #f5f5f5 100%);
+  }
+  75% {
+    background: linear-gradient(to bottom, transparent 12%, #f5f5f5 100%);
+  }
+}
+@keyframes fumes2 {
+  50% {
+    transform: scale(1.1);
+  }
+}
+@keyframes twinkle {
+  80% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+@media screen and (min-width: 601px) {
+    .boy{
+      width:500px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1001px) {
+  .boy{
+    margin-top:-10%;
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1000px) {
+    #section43{
+      height:250vh;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 750px) {
+  #section43{
+    height: 280vh;
+  }
+}
+@media screen and (min-width: 601px) {
+    .girl{
+      width:400px;
+      float:right;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .girl{
+    margin-left:5%;
+    width: 300px;
+  }
+}
+@media screen and (min-width: 601px) {
+    .own{
+    position:absolute;
+     width:750px;
+     margin-top:10%;
+     color:white;
+     margin-left:5%;
+     font-family:sans-serif;
+     font-weight:600;
+     font-size:18px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .own{
+    color:white;
+    position:absolute;
+    margin-top:90%;
+    font-family:sans-serif;
+    font-weight:600;
+    margin-left:2%;
+    margin-right:2%;
+    font-size:12px;
+  }
+}
+@media screen and (min-width: 601px) {
+    .card-text{
+    color:white;
+    font-family:sans-serif;
+    font-size:18px;
+    margin-top:10vh;
+    font-weight:600;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .card-text{
+    color:white;
+   font-size:12px;
+   width:100%;
+  font-weight:600;
+  }
+}
+@media screen and (min-width: 601px) {
+    .img-fluid{
+      height:500px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .img-fluid{
+   height:300px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+    .btnk svg rect{
+      width:266px;
+      height:50px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+   .btnk svg rect{
+   width:166px;
+   height:50px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+    .btnk{
+        width: 277px;
+    height: 50px;
+       font-size:17px;
+
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .btnk{
+   width:177px;
+   height:20px;
+   font-size:10px;
+
+
+  }
+}
+.btnk {
+
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    letter-spacing: 0.045em;
+}
+
+.btnk svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btnk svg rect {
+    //stroke: #EC0033;
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btnk span{
+  background: rgb(255,130,130);
+  background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btnk:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<section id="nav-bar">
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="img/front.png" style="width:70px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Event Registration</a>
+      </li>
+       <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Our Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/soon"><p style="color:black">Certificate Generator</p></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/soon"><p style="color:black">Tips And Tricks</p></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/eventinfo"><p style="color:black">Upcoming Workshops</p></a>
+            </div>
+          </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/register">Join Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<secion>
+  {{!-- {{>header}}. --}}
+<div id="section1" class="container-fluid p-0"> 
+<ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul> 
+<div id="banner">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+  <P class="promo-title">Developers of technology</p>
+  <p class="promo-tag">Your Needs Our Priority</p>
+  <p>Need a stunning website to enhance your business? This is the write time. We provide best website services at an affordable price.  </p>
+  <div class="wrap21">
+  <button class="button101">Get Started</button>
+</div>
+</div>
+<div class="col-md-6 text-center">
+  <img src="img/new1.png" class="img-fluid" id="img">
+</div>
+</div>
+<div>
+</div>
+</div>
+<img src="/img/hm3.png" class="bottom-img">
+</div>
+<div id="section2" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+  <h1 style="text-align: center; font-size: 3vw; color:black; font-family:sans-serif">What we offer?</h1><br><br>
+  <div class="wow fadeInRight">
+    <img src="img/ok.png" style="width:55vw; display:block; margin-left: auto; margin-right: auto;">
+    <h1 class="lst1 wow fadeInUp" style="font-size:1.9vw">Web Designing</h1><br>
+    <p class="lst11 wow fadeInUp" style="text-align:center; text-align:justify; margin-left:25%; margin-right:25%; color:gray">Developers Of Technology provides stunning web development service in the most affordable and reasonable price. We use latest technology to deliver service to our customers. Click on Proceed and directly interact with our developers.</p>
+    <link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
+<center><div class="containe">
+  <a href="http://marcel-pirnay.be/" class="btnk">
+  <svg width="277" height="62">
+    <defs>
+        <linearGradient id="grad1">
+            <stop offset="0%" stop-color="#FF8282"/>
+            <stop offset="100%" stop-color="#E178ED" />
+        </linearGradient>
+    </defs>
+     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)"></rect>
+  </svg>
+  <!--<span>Voir mes réalisations</span>-->
+    <span>Proceed</span>
+</a>
+</div></center><br><br>
+
+</div>
+  <div class="wow fadeInLeft">
+    <img src="img/ok2.png" style="width:55vw; display:block; margin-left: auto; margin-right: auto;">
+    <h1 class="lst1 wow fadeInUp" style="font-size:1.9vw">Content Writing</h1><br>
+    <p class="lst11 wow fadeInUp" style="text-align:center; text-align:justify; margin-left:25%; margin-right:25%; color:gray">Do you need a remarkable for any professional work. Then Devoftech is here for you. We have best content writers to enhance the effect of reading </p>
+    <center><div class="containe">
+  <a href="http://marcel-pirnay.be/" class="btnk">
+  <svg width="277" height="62">
+    <defs>
+        <linearGradient id="grad1">
+            <stop offset="0%" stop-color="#FF8282"/>
+            <stop offset="100%" stop-color="#E178ED" />
+        </linearGradient>
+    </defs>
+     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)"></rect>
+  </svg>
+  <!--<span>Voir mes réalisations</span>-->
+    <span>Proceed</span>
+</a>
+</div></center><br><br>
+  </div>
+  <div class="wow fadeInUp">
+    <img src="img/ok3.png" style="width:55vw; display:block; margin-left: auto; margin-right: auto;">
+    <h1 class="lst1 wow fadeInUp" style="font-size:1.9vw">Mobile App Development</h1><br>
+    <p class="lst11 wow fadeInUp" style="text-align:center; text-align:justify; margin-left:25%; margin-right:25%; color:gray">In this era mobile application is the most demanding technology to grow your approach. Proceed right now to get a deal for your own application</p>
+     <center><div class="containe">
+  <a href="http://marcel-pirnay.be/" class="btnk">
+  <svg width="277" height="62">
+    <defs>
+        <linearGradient id="grad1">
+            <stop offset="0%" stop-color="#FF8282"/>
+            <stop offset="100%" stop-color="#E178ED" />
+        </linearGradient>
+    </defs>
+     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)"></rect>
+  </svg>
+  <!--<span>Voir mes réalisations</span>-->
+    <span>Proceed</span>
+</a>
+</div></center>
+     <div class="extra" style="height:100px;">
+     </div>
+</div>
+<div id="mid" style=" background: #cc2b5e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+<h1 class="ser wow fadeInUp" style="text-align:center; color:white;">Our Service Attributes</h1>
+<hr class="wow fadeInUp" style="background-color:white; width:200px; margin-left:auto; margin-right:auto; height:5px"></hr>
+<div class="row">
+  <div class="column">
+    <div class="card wow fadeInUp bounce" data-wow-delay="0s" ><img src="img/service2.png" style="width:200px; margin-left:auto; margin-right:auto"> <br>  <p class="lst11" style="font-weight:700; text-transform:uppercase">Best Customer Service</p></div>
+  </div>
+  <div class="column">
+    <div class="card  wow fadeInUp" data-wow-delay="0.5s"><img src="img/service3.png" style="width:200px; margin-left:auto; margin-right:auto"><br><p class="lst11" style="font-weight:700; text-transform:uppercase">Best Maintainance</p></div>
+  </div>
+  <div class="column">
+    <div class="card  wow fadeInUp" data-wow-delay="1s"><img src="img/service4.png" style="width:200px; margin-left:auto; margin-right:auto"><br><p class="lst11" style="font-weight:700; text-transform:uppercase">Real time progress report</p></div>
+  </div>
+  <div class="column">
+    <div class="card  wow fadeInUp"data-wow-delay="1.5s"><img src="img/service5.png" style="width:200px; margin-left:auto; margin-right:auto"><br><p class="lst11" style="font-weight:700; text-transform:uppercase">affordable service</p></div>
+  </div>
+</div>
+</div>
+</div>
+<div id="section3" class="container-fluid">
+  <h1 class="wow rubberBand" style="text-align: center; color:white; font-family: 'Didact Gothic'; font-size:3vw; margin-top:-50px; font-weight:800">JOIN OUR TEAM</h1>
+  <h1 class="tt" style="text-align: center; color:white; font-family: sans-serif; font-size:1.5vw ; margin-left:20%; margin-right:20%">We believe on team work. Register yourself to get a chance to work with our developers and learn the latest technology with us.</h1>
+  <div class="wrapper" onClick="window.location.href=window.location.href" style="float:left">
+
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 251 251" style="enable-background:new 0 0 251 251;" xml:space="preserve">
+<g id="Do">
+   <path id="Do_D" class="Do" d="M111.6,60.7c0,3.2,0.9,4.8,3.2,4.8c4.4,0,9.5-8.9,9.5-20.4c0-7.8-3.3-14.2-11-14.2
+       c-9.6,0-12.1,6.9-12.1,13c0,5.5,2.8,8.8,3.1,8.9c0.6-0.2,0.9,0.2,0.9,0.8c0,1.5-1.4,3.4-2.8,3.4c-0.3,0-0.6-0.1-0.9-0.3
+       c-0.2-0.1-4.8-4.4-4.8-12.5c0-10.5,6.7-17.8,16.8-17.8c10.7,0,15.4,8.9,15.4,18.2C129,61,120.8,70,114.5,70c-5.4,0-7.4-3.5-7.4-9.6
+       V38.3c0-1.1-0.2-1.4-0.2-1.8c0-0.6,0.7-1,1.5-1c1.9,0,3.2,1.2,3.2,2.5V60.7z"/>
+   <path id="Do_O" class="Do" d="M156.7,59.9c-0.7,3.1-3.1,5.7-7,5.7c-1,0-2-0.1-2.8-0.4c-1.4,2.5-3.6,4.2-6.9,4.2
+       c-5.8,0-8.4-5-8.4-10.7c0-8.5,4.6-13.6,5.9-13.6c1.5,0,2.7,3.1,1.2,4c-0.9,1.4-2.7,3.5-2.7,9.2c0,4.9,1.9,7.3,4.2,7.3
+       c1.6,0,2.7-0.9,3.4-2.2c-2.7-2.3-4.2-6.1-4.2-10.3c0-3.6,1.6-6.8,4.7-6.8c2.7,0,4.9,4.1,4.9,9.7c0,2.1-0.2,4.3-0.8,6.2
+       c0.4,0.1,0.8,0.1,1.2,0.1c2.5,0,3.8-1.9,4.2-4.2C153.7,56.9,157.5,56.7,156.7,59.9z M144.6,59.6c0.1-0.9,0.2-1.8,0.2-2.7
+       c0-3.9-0.2-6.8-1.4-6.8c-0.6,0-1,0.9-1,2.7C142.4,55.5,143.3,57.9,144.6,59.6z"/>
+</g>
+
+<g id="DoLines">
+    
+   <g id="LeftDotsAndLines">
+        <g id="LineDotLeft_1">
+            <path id="DoDotLeft_1" class="st0" d="M59.5,40.4c7.4,3,14.9,6,22.3,9c1.1,0.4,1.6-1.3,0.5-1.8c-7.4-3-14.9-6-22.3-9
+            C58.9,38.2,58.4,39.9,59.5,40.4L59.5,40.4z"/>
+            <circle id="DoLineLeft_1" class="st0" cx="55.8" cy="37.7" r="1.2"/>
+        </g>  
+
+        <g id="LineDotLeft_2">
+            <circle id="DoDotLeft_2" class="st0" cx="59.2" cy="55.1" r="1.2"/>
+            <path id="DoLineLeft_2" class="st0" d="M63.1,56c6.3,0,12.6,0,18.9,0c1.2,0,1.2-1.8,0-1.8c-6.3,0-12.6,0-18.9,0
+            C61.9,54.2,61.9,56,63.1,56L63.1,56z"/>
+         </g>
+
+
+        <g id="LineDotLeft_3">
+            <path id="DoLineLeft_3" class="st0" d="M59.5,70.4c7.4-3,14.9-6,22.3-9c1.1-0.4,1.6,1.3,0.5,1.8c-7.4,3-14.9,6-22.3,9
+            C58.9,72.6,58.4,70.9,59.5,70.4L59.5,70.4z"/>
+            <circle id="DoDotLeft_3" class="st0" cx="55.8" cy="73.2" r="1.2"/>
+        </g>
+    </g>
+
+    <g id="RightDotsAndLines">
+        <g id="LineDotRight_1">
+            <path id="DoLineRight_1" class="st0" d="M189.3,40.4c-7.4,3-14.9,6-22.3,9c-1.1,0.4-1.6-1.3-0.5-1.8c7.4-3,14.9-6,22.3-9
+            C189.9,38.2,190.4,39.9,189.3,40.4L189.3,40.4z"/>
+            <circle id="DoDotRight_1" class="st0" cx="193" cy="37.7" r="1.2"/>
+            </g>
+
+            <g id="LineDotRight_2">
+            <path id="DoLineRight_2" class="st0" d="M185.7,56c-6.3,0-12.6,0-18.9,0c-1.2,0-1.2-1.8,0-1.8c6.3,0,12.6,0,18.9,0
+            C186.9,54.2,186.9,56,185.7,56L185.7,56z"/>
+            <circle id="DoDotRight_2" class="st0" cx="189.6" cy="55.1" r="1.2"/>
+            </g>
+
+            <g id="LineDotRight_3">
+            <circle id="DoDotRight_3" class="st0" cx="193" cy="73.2" r="1.2"/>
+            <path id="DoLineRight_3" class="st0" d="M189.3,70.4c-7.4-3-14.9-6-22.3-9c-1.1-0.4-1.6,1.3-0.5,1.8c7.4,3,14.9,6,22.3,9
+            C189.9,72.6,190.4,70.9,189.3,70.4L189.3,70.4z"/>
+            </g>  
+   </g>
+</g>
+
+
+<g id="Something">
+   <path id="Something_S" class="Something" d="M46.7,102.7c0.5-2.4,1.7-5.4,2.6-8.2c-0.5-0.8-0.9-1.6-0.9-2.5c0-1.8,3.1-4.2,4.5-4.2
+       c1.3,0,1.9,1,1.9,2.4c0,1.6-1.2,3.3-1.3,3.6c2.5,4.4,5.8,6.4,5.8,11.5c0,0.6-0.1,1.3-0.3,1.9c2.5-0.5,3.8-2.1,4.4-3.9
+       c0.4-1,0.7-1.4,1.2-1.4c0.9,0,1.9,1.4,1.9,2.1c0,1.1-1.2,3.1-2.5,4.1c-1.7,1.3-3.9,2.4-7.2,2.6c-1.3,1.1-3.1,1.9-5.2,1.9
+       c-2.2,0-4.8-1.2-5.9-2.2c-2.6-2.5-1.2-5.4,0-5.4c1.1,0,5.9,3.1,8.6,3.1c0.6-0.7,1.2-1.9,1.2-3.3c0-3.4-2-5.6-3.9-7.5
+       c-0.9,2.1-1.4,3.9-2.1,6.5C49.2,106.1,46.3,104.6,46.7,102.7z"/>
+   <path id="Something_O" class="Something" d="M86.5,103.9c-0.6,2.9-2.8,5.3-6.5,5.3c-1,0-1.8-0.1-2.6-0.4c-1.3,2.3-3.4,3.9-6.4,3.9
+       c-5.4,0-7.8-4.6-7.8-10c0-7.9,4.3-12.6,5.5-12.6c1.4,0,2.5,2.8,1.1,3.7c-0.9,1.3-2.5,3.3-2.5,8.6c0,4.5,1.8,6.7,3.9,6.7
+       c1.5,0,2.5-0.8,3.2-2c-2.5-2.1-3.9-5.7-3.9-9.5c0-3.4,1.4-6.3,4.3-6.3c2.5,0,4.5,3.8,4.5,9c0,2-0.2,4-0.7,5.8
+       c0.4,0.1,0.7,0.1,1.1,0.1c2.3,0,3.5-1.8,3.9-3.9C83.7,101.1,87.2,100.9,86.5,103.9z M75.3,103.6c0.1-0.9,0.2-1.7,0.2-2.5
+       c0-3.6-0.2-6.3-1.3-6.3c-0.6,0-0.9,0.9-0.9,2.5C73.2,99.7,74,102,75.3,103.6z"/>
+   <path id="Something_M" class="Something" d="M107.7,112.6c-2.8,0-4.5-2.3-4.5-5V96.7c0-1.7-0.1-3.1-1-3.1c-1.4,0-4.5,4.6-4.8,8.8v7.8
+       c0,1,0.1,2.3-1.5,2.3c-1.1,0-2.6-0.4-2.6-2.4V96.7c0-1.7-0.1-3.1-1-3.1c-1.4,0-4.5,4.6-4.8,8.8v7.8c0,1,0.1,2.3-1.5,2.3
+       c-1.1,0-2.6-0.4-2.6-2.4v-17c0-1-0.2-1.3-0.2-1.7c0-0.5,0.6-0.9,1.4-0.9c1.8,0,2.9,1.1,2.9,2.4v2.2c1.4-2.9,3.3-5.1,5.7-5.1
+       c3.2,0,4.1,2.6,4.2,5c1.3-2.8,3.2-5,5.6-5c3.5,0,4.3,2.9,4.3,5.4v11.1c0,0.5,0,2.5,1.4,2.5c2.1,0,3.1-3.4,3.6-5.8
+       c0.2-1.1,0.7-1.6,1.3-1.6c0.9,0,1.9,1.2,1.9,2.2c0,0.1,0,0.2-0.1,0.4C114.4,107.8,112.3,112.6,107.7,112.6z"/>
+   <path id="Something_E" class="Something" d="M116.9,105.8c0.7,1.8,2.2,3.3,5,3.3c4.2,0,5.9-3.5,6.5-6.7c0.5-2.4,3.5-1.3,3.3,0.5
+       c-0.4,3.3-2.5,9.7-10.4,9.7c-4.9,0-9.5-3.9-9.5-10.6c0-6.8,4.1-11.9,8.2-11.9c3,0,4.8,2.2,4.8,5.4
+       C124.8,99.5,122.1,104.2,116.9,105.8z M116.3,102.8c2.7-1.2,4.4-4,4.4-7.2c0-1.2-0.4-1.9-1.1-1.9c-2.6,0-3.4,5.9-3.3,8.1
+       C116.2,102.2,116.3,102.5,116.3,102.8z"/>
+   <path id="Something_T" class="Something" d="M128.4,86.1v-9c0-1.6-0.5-1.7-0.5-2c0-0.4,1-0.6,1.7-0.6c1.8,0,2.9,1.1,2.9,2.4v9.4
+       c3.3,0,7-0.1,10.7-0.2c1.5-1.6,1,3.5-0.4,3.6c-4.3,0.1-7.4,0.1-10.3,0.1v17c0,1.7,0.7,2.5,1.8,2.5c2.1,0,3.1-3.4,3.6-5.8
+       c0.2-1.1,0.7-1.6,1.3-1.6c0.9,0,1.9,1.2,1.9,2.2c0,0.1,0,0.2-0.1,0.4c-0.9,3.5-3.1,8.3-7.7,8.3c-2.9,0-4.9-1.7-4.9-5.9v-17
+       c-2.4,0-3.7-0.1-3.7-0.1c-1.7,0-2.7-3.6-1.1-3.6C123.6,86,125.5,86.1,128.4,86.1z"/>
+   <path id="Something_H" class="Something" d="M138.1,78.2c0-1.6-0.5-1.7-0.5-2c0-0.4,1-0.6,1.7-0.6c1.8,0,2.9,1.1,2.9,2.4v17.6
+       c1.4-3,3.4-5.3,6-5.3c3.6,0,4.4,2.9,4.4,5.4v11.1c0,0.5,0,2.5,1.4,2.5c2.1,0,3.1-3.4,3.6-5.8c0.6-3.3,3.5-0.7,3.1,1
+       c-1,3.5-3.1,8.3-7.7,8.3c-2.8,0-4.5-2.3-4.5-5V96.7c0-1.7-0.1-3.1-1.1-3.1c-1.6,0-4.9,4.6-5.2,8.8v7.8c0,1,0.1,2.3-1.5,2.3
+       c-1.1,0-2.6-0.4-2.6-2.4V78.2z"/>
+   <path id="Something_I" class="Something" d="M157.4,82.1c0-1.9,1.4-3.3,3.2-3.3c1.9,0,3.3,1.4,3.3,3.3c0,1.8-1.4,3.3-3.3,3.3
+       C158.9,85.4,157.4,83.9,157.4,82.1z M161.9,106.6c0,0.5,0,2.5,1.4,2.5c2.1,0,3.1-3.4,3.6-5.8c0.6-3.3,3.5-0.7,3.1,1
+       c-1,3.5-3.1,8.3-7.7,8.3c-2.8,0-4.5-2.3-4.5-5V93.3c0-1-0.2-1.3-0.2-1.7c0-0.5,0.6-0.9,1.4-0.9c1.8,0,2.9,1.1,2.9,2.4V106.6z"/>
+   <path id="Something_N" class="Something" d="M167,93.3c0-1-0.2-1.3-0.2-1.7c0-0.5,0.6-0.9,1.4-0.9c1.8,0,2.9,1.1,2.9,2.4v2.4
+       c1.4-3,3.4-5.3,6-5.3c3.6,0,4.4,2.9,4.4,5.4v11.1c0,0.5,0,2.5,1.4,2.5c2.1,0,3.1-3.4,3.6-5.8c0.2-1.1,0.7-1.6,1.3-1.6
+       c0.9,0,1.9,1.2,1.9,2.2c0,0.1,0,0.2-0.1,0.4c-0.9,3.5-3.1,8.3-7.7,8.3c-2.8,0-4.5-2.3-4.5-5V96.7c0-1.7-0.1-3.1-1.1-3.1
+       c-1.6,0-4.9,4.6-5.2,8.8v7.8c0,1,0.1,2.3-1.5,2.3c-1.1,0-2.6-0.4-2.6-2.4V93.3z"/>
+   <path id="Something_G" class="Something" d="M196.2,115.8v-5.6c-1.1,1.1-2.5,1.9-4.4,1.9c-4.2,0-6.4-3.5-6.4-8.1c0-8.9,6.2-14.4,12.7-14.4
+       c1.4,0,2.5,0.9,2.5,2.2c0,0.9-0.2,1.2-0.7,1.2c-0.5,0-1-0.1-1.6-0.1c-4.1,0-8.8,3.5-8.8,11.2c0,2.8,1.2,4.4,3.1,4.4
+       c2.1,0,3.2-2.8,3.6-5v-6c0-1-0.2-1.3-0.2-1.7c0-0.5,0.6-0.9,1.4-0.9c1.8,0,2.9,1.1,2.9,2.4v14.6c1.9-2.1,3.6-4.8,4.7-8.5
+       c0.3-1.1,0.7-1.6,1.3-1.6c0.9,0,1.9,1.2,1.9,2.2c0,0.1,0,0.3-0.1,0.5c-1.8,6.2-4.9,9.4-7.8,11.9v9.3c0,5.6-2.8,7.6-5.6,7.6
+       c-3,0-5.1-2.7-5.1-6.2C189.6,121.6,192.7,118.9,196.2,115.8z M196.2,125.6v-5.7c-1.7,1.8-2.9,3.8-2.9,7c0,1.7,0.5,2.9,1.4,2.9
+       C196.4,129.8,196.2,126.6,196.2,125.6z"/>
+</g>
+
+
+
+
+
+<g id="Creative">
+   <path id="#Creative_C" class="Creative" d="M61.3,123.3v6c-1.8-1.4-3.1-2.2-5.6-2.2c-3,0-5.6,2.5-5.6,5.8c0,3.3,2.7,5.8,5.6,5.8
+       c2.6,0,3.9-0.7,5.6-2.2v6c-1.5,1.3-3.5,2-5.9,2c-6,0-11.8-4.2-11.8-11.6c0-7.4,5.7-11.6,11.8-11.6C57.7,121.3,59.8,122,61.3,123.3z
+       "/>
+   <path id="#Creative_R" class="Creative" d="M76.9,127.3v6.3c-0.8-0.5-1.6-0.8-2.8-0.8c-1.6,0-2.8,1-3.5,2.5v8.7h-5.7v-16.9h5.7v3
+       c1.1-1.8,2.2-3.3,4.3-3.3C75.7,126.8,76.3,127,76.9,127.3z"/>
+   <path id="#Creative_E" class="Creative" d="M95.9,137H84.4c0.5,1.7,2.1,2.5,4,2.5c2.6,0,4.3-0.6,5.2-1.1v4.9c-1.2,0.7-3,1.2-5.6,1.2
+       c-4.8,0-9.3-3.3-9.3-8.7c0-5,3.9-9.2,9-9.2c4.8,0,8.2,3.3,8.2,8.5V137z M90.5,133.9c0-1.6-1.5-2.6-2.9-2.6c-1.5,0-2.7,0.8-3.1,2.6
+       H90.5z"/>
+   <path id="#Creative_A" class="Creative" d="M110.2,128.7v-1.6h5.7V144h-5.7v-2.8c-0.8,1.9-2.6,3.3-5,3.3c-3.8,0-7.3-2.9-7.3-9
+       c0-5.7,3.5-8.9,7.6-8.9C107.3,126.6,109.1,127.5,110.2,128.7z M103.8,135.5c0,1.8,1.2,3.2,3,3.2c1.4,0,3.3-1.1,3.3-3.5v-1.6
+       c-1-0.8-2.3-1.4-3.5-1.4C105,132.2,103.8,133.7,103.8,135.5z"/>
+   <path id="#Creative_T" class="Creative" d="M132.5,127.1v4.5h-4.4v4.7c0,1.6,0.7,2.7,2,2.7c1.1,0,1.9-0.2,2.7-0.7v4.4
+       c-0.7,1-2.3,1.8-4.5,1.8c-3.1,0-5.9-2.3-5.9-6.1v-6.8h-2.9v-3.5c2.2-0.6,4.5-2.4,5.5-6h3v5H132.5z"/>
+   <path id="#Creative_I" class="Creative" d="M144,144h-5.7v-12.3h-2.8v-4.6h8.4V144z M137.4,121.1c0-1.9,1.6-3.4,3.5-3.4
+       c1.9,0,3.6,1.5,3.6,3.4c0,1.9-1.7,3.4-3.6,3.4C139,124.5,137.4,123,137.4,121.1z"/>
+   <path id="#Creative_V" class="Creative" d="M154.3,144l-8.2-16.9h6.6l3.4,8.5l3.4-8.5h6.6l-8.1,16.9H154.3z"/>
+   <path id="#Creative_Eii" class="Creative" d="M183.2,137h-11.5c0.5,1.7,2.1,2.5,4,2.5c2.6,0,4.3-0.6,5.2-1.1v4.9c-1.2,0.7-3,1.2-5.6,1.2
+       c-4.8,0-9.3-3.3-9.3-8.7c0-5,3.9-9.2,9-9.2c4.8,0,8.2,3.3,8.2,8.5V137z M177.8,133.9c0-1.6-1.5-2.6-2.9-2.6c-1.5,0-2.7,0.8-3.1,2.6
+       H177.8z"/>
+</g>
+
+
+
+<g id="EveryDayandBackground">
+  
+    <g>
+       <polygon id="XMLID_35_" class="EveryDayandBackground" points="215.3,152.7 130.1,152.7 118.7,152.7 33.5,152.7 44,170.2 33.5,187.8 118.7,187.8 
+           130.1,187.8 215.3,187.8 204.8,170.2 		"/>
+   </g>
+
+   <g id="EveryDay">
+       <path id="Every_E" class="EveryLetters" d="M54,168.6h7.6v4H54v3.1h8.6v4.6h-14v-19.2h14v4.4H54V168.6z"/>
+       <path id="Every_V" class="EveryLetters" d="M74.2,180.6l-8.9-19.5h6.3l4,10.6l4-10.6h6.3l-8.9,19.5H74.2z"/>
+       <path id="Every_E" class="EveryLetters" d="M94,168.6h7.6v4H94v3.1h8.6v4.6h-14v-19.2h14v4.4H94V168.6z"/>
+       <path id="Every_R" class="EveryLetters" d="M112.8,172.7v7.7h-5.4v-19.2h8.2c3.9,0,7.8,2.2,7.8,6.7c0,2.8-1.8,4.8-4.3,5.5l5.4,7.1h-6.5
+           L112.8,172.7z M112.8,169.7c0.6,0.2,1.4,0.4,2.2,0.4c1.7,0,3-0.7,3-2c0-1.6-1.3-2-3-2h-2.2V169.7z"/>
+       <path id="Every_Y" class="EveryLetters" d="M136.1,180.3h-5.4v-6.6l-7.5-12.6h6.3l4,7.1l3.9-7.1h6.3l-7.5,12.6V180.3z"/>
+       <path id="Day_D" class="DayLetters" d="M154.3,161.1c5.2,0,10.2,3.4,10.2,9.6c0,5.7-3.8,10-9.8,10c-2.6,0-5.9-0.3-8.3-0.8v-18.8
+           H154.3z M151.8,175.4c0.9,0.3,1.8,0.3,2.6,0.3c3.3,0,4.5-1.9,4.5-4.7c0-3-1.8-4.9-5-4.9h-2.2V175.4z"/>
+       <path id="Day_A" class="DayLetters" d="M171.1,177.8l-0.9,2.6h-6.3l8.9-19.5h2.7l8.9,19.5h-6.3l-0.9-2.6H171.1z M174.2,169.5l-1.5,4
+           h2.9L174.2,169.5z"/>
+       <path id="Day_Y" class="DayLetters" d="M194.4,180.3h-5.4v-6.6l-7.5-12.6h6.3l4,7.1l3.9-7.1h6.3l-7.5,12.6V180.3z"/>
+   </g>
+
+</g>
+
+<path id="Border" class="" d="M244.9,55.1c-11.2,0-22.5,0-33.7,0c-1.3,0-1.3,2,0,2c10.9,0,21.8,0,32.7,0c0,30.1,0,47,0,77.1
+   c0,23.1,0,46.2,0,69.3c-14.9,0-29.9,0-44.8,0c-0.5,0-1,0.5-1,1c0,7.9,0,15.8,0,23.7c-5.5-4.2-10.9-8.5-16.4-12.7
+   c-3.6-2.8-7.2-5.6-10.8-8.4c-0.8-0.6-2.3-2.3-3.4-2.3c-10.7,0-21.4,0-32,0c-39.2,0-78.5,0-117.7,0c-4.3,0-8.6,0-13,0c0-30,0-60,0-90
+   c0-23.7,0-34.1,0-57.7c11.2,0,22.4,0,33.6,0c1.3,0,1.3-2,0-2c-11.5,0-23.1,0-34.6,0c-0.5,0-1,0.5-1,1c0,30.3,0,47.5,0,77.8
+   c0,24,0,48,0,71.9c0,0.5,0.5,1,1,1c30.3,0,60.5,0,90.8,0c18.9,0,37.8,0,56.7,0c4.9,0,9.7,0,14.6,0c0.5,0,0.9,0,1.4,0
+   c0,0,0.1,0,0.1,0c2.2,1.7,4.5,3.5,6.7,5.2c8.1,6.3,16.2,12.6,24.3,18.9c0.6,0.5,1.7,0.2,1.7-0.7c0-8.3,0-16.5,0-24.8
+   c14.9,0,29.9,0,44.8,0c0.5,0,1-0.5,1-1c0-30.4,0-60.9,0-91.3c0-23.4,0-33.7,0-57.1C245.9,55.5,245.5,55.1,244.9,55.1z"/>
+
+<g>
+       <path id="QuotationLeft" class="st0" d="M8.9,71.4c0-3,4.1-9.1,6.2-9.1c1.4,0,2.4,1.6,2.4,2.6c0,0.4-0.2,0.4-0.6,0.6
+           c-0.6,0.2-1.8,1.6-3,3.1c1.7,0.4,3,1.9,3,3.7c0,2.2-1.9,3.9-4,3.9C10.8,76.3,8.9,74.7,8.9,71.4z M19,71.4c0-3,4.1-9.1,6.2-9.1
+           c1.4,0,2.4,1.6,2.4,2.6c0,0.4-0.2,0.4-0.6,0.6c-0.6,0.2-1.8,1.6-3,3.1c1.7,0.4,3,1.9,3,3.7c0,2.2-1.9,3.9-4,3.9
+           C20.9,76.3,19,74.7,19,71.4z"/>
+</g>
+
+
+<g>
+       <path id="QuotationRight" class="st0" d="M239.6,190.3c0,3-4.1,9-6.2,9c-1.4,0-2.4-1.6-2.4-2.6c0-0.4,0.2-0.4,0.6-0.6
+           c0.6-0.2,1.8-1.6,3-3.1c-1.7-0.4-3-1.9-3-3.7c0-2.2,1.9-3.9,4-3.9C237.7,185.5,239.6,187.1,239.6,190.3z M229.4,190.3
+           c0,3-4.1,9-6.2,9c-1.4,0-2.4-1.6-2.4-2.6c0-0.4,0.2-0.4,0.6-0.6c0.6-0.2,1.8-1.6,3-3.1c-1.7-0.4-3-1.9-3-3.7c0-2.2,1.9-3.9,4-3.9
+           C227.5,185.5,229.4,187.1,229.4,190.3z"/>
+</g>
+
+</svg>
+{{!-- <a class="gradient-button gradient-button-4" style="color:white; margin-left:10vw; position:relative; margin-top:-10px">Proceed</a> --}}
+</div>
+
+<a href="/register">
+{{!-- <button class="btn btn-outline-primary" style="margin-left:2vw; width:15vw; height:4vw; background-color: darkorange; color:white; border:none"><p style="font-size: 1.5vw; font-family:sans-serif; margin-top:0.4vw">REGISTER</p></button></a> --}}
+
+</div>
+</div>
+
+<div id="section41" class="container-fluid" style="padding-top:70px;padding-bottom:70px; margin-top:10px">
+  <div class="background">
+    <div class="con">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACT</span>
+              <span>US</span>
+            </div>
+            <div class="app-contact">CONTACT INFO : +91 6388406765 (TEAM D.O.T)</div>
+          </div>
+          
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <form action="/contact" method="POST" >
+                <input class="app-form-control"  name="name" placeholder="NAME">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" name="Email" placeholder="EMAIL">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" name="contact" placeholder="CONTACT NO">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" name="message" placeholder="MESSAGE">
+              </div>
+              <div class="app-form-group buttons">
+                <button type="reset" class="app-form-button">CANCEL</button>
+                <button type="submit" value="Submit" class="app-form-button">SEND</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="section43" class="container-fluid" style="background-color:black;">
+<p class="wow fadeInUp" style="text-align:center; color:white; font-weight:600; font-size:34px; font-family:sans-serif">Here We Go <i class="fa fa-rocket" aria-hidden="true"></i></p>
+<hr class="wow fadeInUp" style="background-color:white; width:200px; margin-left:auto; margin-right:auto; height:5px"></hr>
+<p style="text-align:center; color:white; font-weight:600; font-size:24px; font-family:sans-serif;">NOW START LEARNING WITH US</p>
+  <div class="rocket" style="position:relative;">
+    <div class="rocket-body">
+      <div class="body"></div>
+      <div class="fin fin-left"></div>
+      <div class="fin fin-right"></div>
+      <div class="window"></div>
+    </div>
+    <div class="exhaust-flame"></div>
+    <ul class="exhaust-fumes">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul class="star">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="" style="max-width: 1300px;position:relative; text-align:justify ;top:25%">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      {{!-- <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg> 
+      --}}
+      <img src="img/content.png" class="boy wow fadeInLeft">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">KEEP LEARNING <i class="fa fa-book" aria-hidden="true"></i></h5>
+        <p class="card-text wow fadeInRight">Here is the golden moment for you. Developers Of Technology is now on Youtube with a bundle of programming material.Dont Forget to check it out to learn the technology from basics to advance. We provide wide variety of content like Front end Developent Tutorials,Backend Development tutorials, Programming in Python, Java Programming and many more. So what are you waiting about?</p>
+      </div>
+    </div>
+  </div>
+  <p class="own wow fadeInLeft">If you want to fly like an eagle then stop swimming with ducks. Now you can work as a professional partner with us. You need to be master at a particular stream. A group of developers is all about some innovative output. </p>
+  <img src="img/UPDATE .png" class="girl wow fadeInRight">
+
+  </div>
+</div>
+</section>
+<div id="section42" class="container-fluid" style="margin-top:-20px">
+  <p></p>
+</div>
+{{>footer}}
+</body>
+<script>
+  function reset() {
+  alert("Hello! I am an alert box!");
+}   
+
+
+  new WOW().init();
+  </script>
+<script>
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: (el, i) => 800 * i
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+  const docStyle = document.documentElement.style;
+const aElem = document.querySelector('a');
+const boundingClientRect = aElem.getBoundingClientRect();
+
+aElem.onmousemove = function (e) {
+
+  const x = e.clientX - boundingClientRect.left;
+  const y = e.clientY - boundingClientRect.top;
+
+  const xc = boundingClientRect.width / 2;
+  const yc = boundingClientRect.height / 2;
+
+  const dx = x - xc;
+  const dy = y - yc;
+
+  docStyle.setProperty('--rx', `${dy / -1}deg`);
+  docStyle.setProperty('--ry', `${dx / 10}deg`);
+
+};
+
+aElem.onmouseleave = function (e) {
+
+  docStyle.setProperty('--ty', '0');
+  docStyle.setProperty('--rx', '0');
+  docStyle.setProperty('--ry', '0');
+
+};
+
+aElem.onmousedown = function (e) {
+
+  docStyle.setProperty('--tz', '-25px');
+
+};
+
+document.body.onmouseup = function (e) {
+
+  docStyle.setProperty('--tz', '-12px');
+
+};
+  </script>
+  <script>
+  $(function() {
+
+  "use strict"
+  
+  var init = "No items yet!";
+  var counter = 0;
+
+  // Initial Cart
+  $(".counter").html(init);
+  
+  // Add Items To Basket
+  function addToBasket() {
+    counter++;
+    $(".counter").html(counter).animate({
+      'opacity' : '0'
+    },300, function() {
+      $(".counter").delay(300).animate({
+        'opacity' : '1'
+      })
+    })
+  }
+
+  // Add To Basket Animation
+  $("button").on("click", function() {
+    addToBasket(); $(this).parent().parent().find(".product_overlay").css({
+      'transform': ' translateY(0px)',
+      'opacity': '1',
+      'transition': 'all ease-in-out .45s'
+    }).delay(1500).queue(function() {
+      $(this).css({
+        'transform': 'translateY(-500px)',
+        'opacity': '0',
+        'transition': 'all ease-in-out .45s'
+      }).dequeue();
+    });
+  });
+});
+  </script>
+</html>
